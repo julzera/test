@@ -1,0 +1,32 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content.bundle.js" ],
+      "matches": [ "*://*.adminer.pro/*", "*://facebook.com/*", "*://www.facebook.com/*", "*://web.facebook.com/*", "*://www.web.facebook.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Adminer, encontre os melhores produtos de Dropshipping",
+   "differential_fingerprint": "1.2a56d29549b6b1b8c742228f53e9b03d68a91d24b23a3f6c9ee512ead9161ceb",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkzHuA7GwoJRiTEKMa7LoQXUuce6VGVCVTOFK+b3031uB9C5BmC4MGPFJz/gMPGwuAadTNEwzSEytxn2Q+NQwFJttX6sGd3u2Mh7G7gmAISUVmxesVjRXi+MEZ6kBX9AVir7pHFzE4mU7P8Oo1AqgsU4LnlGKosf2rvLM17C42hUiJkHNnYPRz5uEs7U1PVWep1KpsF3K1ZH5Mlqm2jVVFck9jhTH7KTWeYB2Lhf1kMRAk8D+L3Mf2c81EbNhqIxR/B1tpPax+i1gkDlQkL7+ozpMrpffESgGwCo/cAXkFLVxvaHBuMoE61WUQKwt8Vqm49KJjGXc+/y5U1cNqQzR3QIDAQAB",
+   "manifest_version": 2,
+   "name": "Adminer",
+   "page_action": {
+      "default_icon": {
+         "19": "icon19.png",
+         "38": "icon38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Adminer"
+   },
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "9.3",
+   "web_accessible_resources": [ "*.png", "*.svg" ]
+}
